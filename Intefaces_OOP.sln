@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33213.308
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Interfaces_OOP", "Interfaces_OOP.csproj", "{660DB49E-0917-4BFA-A35F-E9A68235E594}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyNumberUnitTests", "..\MyNumberUnitTests\MyNumberUnitTests.csproj", "{BD63CA8D-FCFC-4753-A660-6D48C552AA37}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{660DB49E-0917-4BFA-A35F-E9A68235E594}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{660DB49E-0917-4BFA-A35F-E9A68235E594}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{660DB49E-0917-4BFA-A35F-E9A68235E594}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{660DB49E-0917-4BFA-A35F-E9A68235E594}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BD63CA8D-FCFC-4753-A660-6D48C552AA37}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD63CA8D-FCFC-4753-A660-6D48C552AA37}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD63CA8D-FCFC-4753-A660-6D48C552AA37}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD63CA8D-FCFC-4753-A660-6D48C552AA37}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9CCCE93F-72E7-42A5-A042-613A5B6C5DE1}
+	EndGlobalSection
+EndGlobal
