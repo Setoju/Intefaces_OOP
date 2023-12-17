@@ -12,10 +12,12 @@ namespace Interfaces_OOP
         // Constructors
         public MyFrac(BigInteger nom, BigInteger denom)
         {
-            IsDenomZero(denom);               
+            ZeroDivisionCheck(denom);               
             
             this.nom = nom;
             this.denom = denom;
+
+            RemovingNegativeDenom();
         }
 
         public MyFrac(int nom, int denom)
@@ -23,22 +25,13 @@ namespace Interfaces_OOP
             BigInteger denomBig = (BigInteger)denom;
             BigInteger nomBig = (BigInteger)nom;      
 
-            IsDenomZero(denomBig);
+            ZeroDivisionCheck(denomBig);
 
             this.nom = nomBig;
             this.denom = denomBig;
-        }
 
-        public MyFrac(char nom, char denom)
-        {
-            BigInteger denomBig = BigInteger.Parse(denom.ToString());
-            BigInteger nomBig = BigInteger.Parse(nom.ToString());
-
-            IsDenomZero(denomBig);
-
-            this.nom = nomBig;
-            this.denom = denomBig;
-        }
+            RemovingNegativeDenom();
+        }       
 
         public MyFrac(string frac)
         {
@@ -56,15 +49,26 @@ namespace Interfaces_OOP
 
             nom = bigIntFrac[0];
             denom = bigIntFrac[1];
+
+            RemovingNegativeDenom();
         }              
 
         // Helping methods
-        private void IsDenomZero(BigInteger denom)
+        private void ZeroDivisionCheck(BigInteger denom)
         {
             if (denom == 0)
             {
                 throw new DivideByZeroException();
             }
+        }
+
+        private void RemovingNegativeDenom()
+        {
+            if (denom > 0)
+                return;
+
+            nom = -nom;
+            denom = -denom;
         }
 
         private BigInteger SimplifyFrac(BigInteger a, BigInteger b)

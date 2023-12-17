@@ -47,7 +47,7 @@ static void testSquaresDiffrences<T>(T a, T b) where T : IMyNumber<T>
 
 MyFrac f1 = new MyFrac("1/3");
 MyFrac f2 = new MyFrac(-2, -3);
-MyFrac f3 = new MyFrac(10, 11);
+MyFrac f3 = new MyFrac(10, -11);
 testAPlusBSquare(f1, f2);
 testAPlusBSquare(new MyComplex(1, 3), new MyComplex(1, 6));
 testSquaresDiffrences(f1, f2);
